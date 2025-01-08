@@ -1,0 +1,51 @@
+[package]
+name = "gossip_glomers"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "echo"
+path = "bin/echo.rs"
+
+[[bin]]
+name = "unique-ids"
+path = "bin/unique_ids.rs"
+
+[[bin]]
+name = "broadcast-v1"
+path = "bin/broadcast_v1.rs"
+
+[[bin]]
+name = "broadcast-v2"
+path = "bin/broadcast_v2.rs"
+
+[[bin]]
+name = "grow-counter-v1"
+path = "bin/grow_counter_v1.rs"
+
+[[bin]]
+name = "grow-counter-v2"
+path = "bin/grow_counter_v2.rs"
+
+[[bin]]
+name = "kafka-log"
+path = "bin/kafka_log.rs"
+
+[[bin]]
+name = "txn-rw-register"
+path = "bin/txn_rw_register.rs"
+
+[[bin]]
+name = "txn-list-append"
+path = "bin/txn_list_append.rs"
+
+[lib]
+name = "maelstrom_client"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1.0.133"
+tokio = { version = "1.42.0", features = ["full"] }
+async-trait = "0.1.83"
+tokio-util = { version = "0.7.13", features = ["rt"] }
