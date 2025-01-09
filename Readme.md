@@ -45,11 +45,4 @@ Implementation of a transactional key-value store:
 - Built in Rust
 - Uses `serde` for data serialization/deserialization
 - Uses `tokio` for async runtime support
-
-## Key Takeaways
-This challenge series provided valuable hands-on experience with core distributed systems concepts. Working through these problems helped develop practical understanding of:
-- Gossip protocols
-- CRDT implementation
-- State management across nodes
-- Distributed consensus
-- Distributed transactions
+- Uses maelstrom client implemented from scratch
